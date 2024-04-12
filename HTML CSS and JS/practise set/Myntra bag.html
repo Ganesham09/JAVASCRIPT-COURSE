@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Myntra Bag</title>
+   <link rel="stylesheet" href="Myntra bag.css">
+</head>
+<body>
+    <main>
+        <button class="bag-button" onclick="cartQuantity  ++;
+        document.querySelector('#cart-Summary').innerText = `Your Bag has ${cartQuantity } Items `;">
+          Add to Bag
+        </button>
+        <button class="wish-button" onclick="cartQuantity  -- ;
+        document.querySelector('#cart-Summary').innerText = `Your Bag has ${cartQuantity } Items `;">
+          Move to Whislist
+        </button>
+        <button class="bag-button" onclick="cartQuantity +=  2;
+        document.querySelector('#cart-Summary').innerText = `Your Bag has ${cartQuantity } Items `;">
+        Add 1+1 sale item
+        </button>
+        <h1 id="cart-Summary"></h1>
+        <script>
+        let cartQuantity = 0;
+        document.querySelector('#cart-Summary').innerText = `Your Bag has ${cartQuantity } Items `;
+        </script>
+    
+</body>
+</html>

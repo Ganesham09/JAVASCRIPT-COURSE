@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+  <script>
+    let age = 19;
+    let UserMessage;
+    if (age > 18){
+        let UserMessage = 'You can drive';
+        console.log(UserMessage);
+    }else{
+        let UserMessage = 'Use Bicycle';
+        console.log(UserMessage);
+    }
+      console.log(UserMessage);
+  </script>  
+</body>
+</html>
